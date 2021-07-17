@@ -54,13 +54,13 @@
           </ul>
         <li> lesson rate(id(private key), complete(), class_num integer, level</li>
       <ul>
-            <li> id -> 사용자 아이디 </li>
+            <li> id -> 사용자 아이디(PRIVATE KEY) </li>
             <li> complete -> 완료 여부(boolean) </li>
             <li> class_num -> 수업인덱스 (integer)</li>
             <li> level -> base / hard</li>
           </ul>
     </ol>
-    <p>타입없는 거는 text이다.</p>
+    <strong>타입 표시하지 않은 것은 text이다.</strong>
     <h3> 과제 </h3>
     <ul>
             <li> 회원가입 구현 </li>
