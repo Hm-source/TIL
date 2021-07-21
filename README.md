@@ -77,10 +77,10 @@
 <summary>2021.07.21</summary>
   <div markdown="3">
     <h2> sign up 구현 </h2>
-    <h4> SHAP_STORY/back_end/bin/</h4>
-    <p> www.js 파일을 웹서버 실행파일로 변경.</p>
-    <h4> node.js 와 DB(mysql)연동하기 (db/database.js) </h4>
-    ```npm install --save mysql```
+    <h4> - SHAP_STORY/back_end/bin/</h4>
+    <p> www.js 파일을 웹서버 실행파일로 변경.</p><br>
+    <h4> - node.js 와 DB(mysql)연동하기 (db/database.js) </h4>
+    <pre>npm install --save mysql</pre>
     을 통해 mysql 설치<br>
     <p> js파일에서 확잘 모듈 로딩 및 DB Connection 정보 설정 -> db/database.js에 있음.</p>
     <p>cmd 창에서 mysql을 실행하여 사용할 DB와 TABLE 생성.
@@ -91,6 +91,28 @@
     </ul>
     <p>MySQL 8부터 기본 인증 프로토콜이 기존의 mysql_native_password에서 caching_sha2_password로 변경되었고, 기존의 방식을 지원하지 않게 되서 발생한 문제라고 한다. 해결 방법으로는 1)비밀번호를 변경하거나 2)서버 설정을 변경한다. 참고사이트 : https://right-hot.tistory.com/entry/mysql-nodejs-%EC%97%B0%EB%8F%99-%EC%97%90%EB%9F%AC</p>
     <br>
+    <h4> - sign up 구현에 필요한 모듈</h4>
+    <p>npm을 이용하여 <br>
+    "bcrypt", "body-parser", "cookie-parser", "cors", "ejs", "express", "express-session", "mysql", "node-mysql"<br> 설치</p><br>
+    <h4> - ejs 사용</h4>
+    <p> views/home 디렉토리를 만들어서 회원가입을 할 수 있도록 보여주는 ejs파일을 사용.</p>
+    <p> <strong>* ejs란?</strong><br>EJS는 Embedded JavaScript의 약자로 Express에서 dynamic website를 만들기 위해 template으로 사용되는 파일(확장자 이름은 .ejs)
+    </p>
+    <p>app.js에 app setting</p><br>
+    <pre>
+app.set("views", "./views");<br>
+app.set("view engine", "ejs");</pre><br>
+    <h4> - app.js에 middleware 등록</h4>
+    <pre>app.use(express.json());<br>
+app.use(express.urlencoded({ extended: true }));</pre>
+    body-parser의 일부기능이 express에 있어서 굳이 body-parser를 이용하지 않고 사용.<br>
+    <h4> - 라우팅 모듈 사용</h4>
+    <pre>const home = require("./routes/home");</pre>
+    <p>\routes\home\home.ctrl.js 를 통해서 index.js 의 register 연결.
+    <br> index.js에서 <pre>router.get('/register', ctrl.register);</pre>을 통해서 home.ctrl에서 내보낸 register 모듈을 연결.</p>
+    <p>index.js 에서 라우트 경로 '/register'를 라우트 메소드 POST를 사용합니다. <br>이 메소드 안에서 sign up 페이지에서 입력한 아이디, 비밀번호, 이름, 학년 등을 query문을 통해서 mysql 'STORY'라는 db의 table USER에 INSERT합니다. </p><br>
+    <p>비밀번호는 암호화가 필요하기 때문에 비밀번호 암호화 <strong>bcrypt hash 함수</strong>를 사용합니다. </p><br>
+    
     <h3> 과제 </h3>
     <ul>
             <li> 게시판 구현하기 </li>
