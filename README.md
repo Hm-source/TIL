@@ -78,11 +78,24 @@
   <div markdown="3">
     <h2> sign up 구현 </h2>
     <h4> SHAP_STORY/back_end/bin/</h4>
-
+    <p> www.js 파일을 웹서버 실행파일로 변경.</p>
+    <h4> node.js 와 DB(mysql)연동하기 (db/database.js) </h4>
+    ```npm install --save mysql```
+    을 통해 mysql 설치<br>
+    <p> js파일에서 확잘 모듈 로딩 및 DB Connection 정보 설정 -> db/database.js에 있음.</p>
+    <p>cmd 창에서 mysql을 실행하여 사용할 DB와 TABLE 생성.
+    root계정에서 cmd창에서 mysql을 들어가는 과정에서 비밀번호 오류와 연동 오류 발생.</p>
+    <ul>
+            <li> 유형 1) ERROR 1045 (28000): Access denied for user 'root@'localhost' (using password: NO) </li>
+            <li> 유형 2) Error: ER_NOT_SUPPORTED_AUTH_MODE: Client does not support authentication protocol requested by server; consider upgrading MySQL client</li>
+    </ul>
+    <p>MySQL 8부터 기본 인증 프로토콜이 기존의 mysql_native_password에서 caching_sha2_password로 변경되었고, 기존의 방식을 지원하지 않게 되서 발생한 문제라고 한다. 해결 방법으로는 1)비밀번호를 변경하거나 2)서버 설정을 변경한다. 참고사이트 : https://right-hot.tistory.com/entry/mysql-nodejs-%EC%97%B0%EB%8F%99-%EC%97%90%EB%9F%AC</p>
+    <br>
     <h3> 과제 </h3>
     <ul>
             <li> 게시판 구현하기 </li>
     </ul>
+    <br>
     <h3> 다음 시간 할 일 </h3>
     <ul>
             <li> 게시판, 마이페이지 관련 회의 및 merge</li>
