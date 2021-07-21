@@ -73,4 +73,20 @@
   </div>
 </details>
 
+<details>
+<summary>2021.07.21</summary>
+  <div markdown="3">
+    <h2> sign up 구현 </h2>
+    <h4> SHAP_STORY/back_end/bin/</h4>
+
+    <h3> 과제 </h3>
+    <ul>
+            <li> 게시판 구현하기 </li>
+    </ul>
+    <h3> 다음 시간 할 일 </h3>
+    <ul>
+            <li> 게시판, 마이페이지 관련 회의 및 merge</li>
+    </ul>
+  </div>
+</details>
 
