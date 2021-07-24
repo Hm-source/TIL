@@ -112,7 +112,6 @@ app.use(express.urlencoded({ extended: true }));</pre>
     <br> index.js에서 <pre>router.get('/register', ctrl.register);</pre>을 통해서 home.ctrl에서 내보낸 register 모듈을 연결.</p>
     <p>index.js 에서 라우트 경로 '/register'를 라우트 메소드 POST를 사용합니다. <br>이 메소드 안에서 sign up 페이지에서 입력한 아이디, 비밀번호, 이름, 학년 등을 query문을 통해서 mysql 'STORY'라는 db의 table USER에 INSERT합니다. </p><br>
     <p>비밀번호는 암호화가 필요하기 때문에 비밀번호 암호화 <strong>bcrypt hash 함수</strong>를 사용합니다. </p><br>
-    
     <h3> 과제 </h3>
     <ul>
             <li> 게시판 구현하기 </li>
