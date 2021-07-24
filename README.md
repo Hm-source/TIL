@@ -125,3 +125,25 @@ app.use(express.urlencoded({ extended: true }));</pre>
   </div>
 </details>
 
+<details>
+<summary>2021.07.24</summary>
+  <div markdown="1">
+    <h2> signin, signup merge 작업 </h2>
+      <ul>
+            <li> merge 중 오류 </li>
+            <ol>
+              <li>오타 수정</li>
+              <li>[ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client 오류</li>
+                <p>res.send를 없애니 오류 없어짐.</p>
+            </ol>
+    </ul>
+    <h2> db table 변경</h2>
+    <p>table 이름 변경 user -> student</p><br>
+    <p>student phone_number(char(11)) 추가 </p><br>
+    <p>CHARSET = utf8mb4 COLLATE = utf8mb4_general_ci 추가 -> Emoji (이모지😁) 를 지원</p><br>
+    <h3> 다음 시간 할 일 </h3>
+    <ul>
+            <li> 마이페이지, 게시판 구현 </li>
+    </ul>
+  </div>
+</details>
