@@ -156,7 +156,6 @@ app.use(express.urlencoded({ extended: true }));</pre>
             <li> 기능 논의</li>
             <li>버그 확인</li>
     </ul>
-
     <h3> 다음 시간 할 일 </h3>
     <ul>
             <li> 마이페이지, 게시판 기능 구현 및 오류 확인 </li>
