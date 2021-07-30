@@ -126,7 +126,7 @@ app.use(express.urlencoded({ extended: true }));</pre>
 
 <details>
 <summary>2021.07.24</summary>
-  <div markdown="1">
+  <div markdown="4">
     <h2> signin, signup merge 작업 </h2>
       <ul>
             <li> merge 중 오류 </li>
@@ -143,6 +143,23 @@ app.use(express.urlencoded({ extended: true }));</pre>
     <h3> 다음 시간 할 일 </h3>
     <ul>
             <li> 마이페이지, 게시판 구현 </li>
+    </ul>
+  </div>
+</details>
+
+<details>
+<summary>2021.07.28</summary>
+  <div markdown="5">
+    <h2> 마이페이지, 게시판 관련 회의 </h2>
+      <ul>
+            <li> DB 재논의 </li>
+            <li> 기능 논의</li>
+            <li>버그 확인</li>
+    </ul>
+
+    <h3> 다음 시간 할 일 </h3>
+    <ul>
+            <li> 마이페이지, 게시판 기능 구현 및 오류 확인 </li>
     </ul>
   </div>
 </details>
