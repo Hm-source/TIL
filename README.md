@@ -162,3 +162,21 @@ app.use(express.urlencoded({ extended: true }));</pre>
     </ul>
   </div>
 </details>
+
+<details>
+<summary>2021.08.04</summary>
+  <div markdown="5">
+    <h2> 마이페이지, 게시판 수정 회의 </h2>
+      <ul>
+            <li> routes 분리 </li>
+            <li> 기능 확정 </li>
+            <li> 버그 수정 완료</li>
+    </ul>
+    <h3> 다음 시간 할 일 </h3>
+    <ul>
+            <li> 마이페이지, 게시판 merge하기</li>
+            <li> 버그 수정 </li>
+            <li> react 코드 확인 </li>
+    </ul>
+  </div>
+</details>
