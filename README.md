@@ -196,3 +196,18 @@ app.use(express.urlencoded({ extended: true }));</pre>
     </ul>
   </div>
 </details>
+
+<details>
+<summary>2021.08.18</summary>
+  <div markdown="7">
+    <h2> 프론트엔드, 백엔드 합치기</h2>
+      <ul>
+            <li> 리액트 합치기 </li>
+            <li> 개발 논의 </li>
+      </ul>
+    <h3> 다음 시간 할 일 </h3>
+    <ul>
+            <li> 로그인, 회원가입 react node.js 연결</li>
+    </ul>
+  </div>
+</details>
