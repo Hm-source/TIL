@@ -211,3 +211,18 @@ app.use(express.urlencoded({ extended: true }));</pre>
     </ul>
   </div>
 </details>
+
+<details>
+<summary>2021.08.25</summary>
+  <div markdown="7">
+    <h2> signup, post 프런트, 백엔드 개발</h2>
+      <ul>
+            <li> 리액트 합치기 </li>
+            <li> 오류 고치기 </li>
+      </ul>
+    <h3> 다음 시간 할 일 </h3>
+    <ul>
+            <li> 회고록 작성 </li>
+    </ul>
+  </div>
+</details>
