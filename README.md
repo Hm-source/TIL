@@ -217,7 +217,7 @@ app.use(express.urlencoded({ extended: true }));</pre>
   <div markdown="7">
     <h2> signup, post 프런트, 백엔드 개발</h2>
       <ul>
-            <li> 리액트 합치기 </li>
+            <li> 리액트 class, function, component 구현, backend 연결, db수정 </li>
             <li> 오류 고치기 </li>
       </ul>
     <h3> 다음 시간 할 일 </h3>
